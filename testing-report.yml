@@ -14,3 +14,9 @@ status: fail
 - summary: |
   Проверка фильтрации товаров по параметрам (цена, бренд, категория)
 status: pass
+- summary: |
+  Проверка отображения и работы сайта на мобильном устройстве
+status: fail
+- summary: |
+  Проверка корректной работы сайта в последних версиях Chrome, Firefox, Safari, Edge
+status: fail
