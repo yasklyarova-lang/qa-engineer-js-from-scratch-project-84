@@ -166,12 +166,11 @@ expected-result: |
   7. В ландшафте вёрстка не ломается.
 
  - summary: |
-  Проверка корректной работы сайта в последних версиях Chrome, Firefox, Safari, Edge
+  Сайт корректно работает последних версиях Chrome, Firefox, Safari, Edge
 requirement: |
-  Сайт должен корректно работать в последних версиях браузеров:
+  Сайт совместим с последними версиями браузеров:
   Chrome, Firefox, Safari, Edge
 prerequisites: |
-  Mac с macOS последней версии.
   Установлены последние версии браузеров:
   Chrome, Firefox, Safari, Edge.
   Открыт сайт https://products-store.hexlet.app
