@@ -111,7 +111,7 @@ expected-result: |
 - summary: |
   Проверка фильтрации товаров по параметрам
 requirement: |
-  Товар находится по категории и цене
+  Товар находится по категории, цене и бренду
 prerequisites: |
   Chrome.
   Открыт сайт https://products-store.hexlet.app
