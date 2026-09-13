@@ -29,6 +29,13 @@ actual-result: |
   - «Rouge à lèvres» (FR) → «Ничего не найдено»
   - «Red Lipstick» (EN) → товар найден
 
+- summary: |
+  Сайт корректно отображается и работает на мобильном устройстве
+environment: |
+  Google Chrome 152.0.7977.76 (официальная сборка) (arm64)
+  macOS 26.5.2 (25F84) MacBook Air, 2560 × 1664
+steps-to-reproduce: |
+1. Открыть https://products-store.hexlet.app
+2. DevTools, Toggle device toolbar, iPhone SE (375×667)
+3. Сравнить вёрстку с десктопной: карточки в один ряд, меню гамбургер горизонтальная прокрутка отсутствует ширина эллементов карточки выходит за экран на этом шаге ошибка шрифт 16
 
-
-  
