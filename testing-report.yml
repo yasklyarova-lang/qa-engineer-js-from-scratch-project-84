@@ -52,11 +52,11 @@ status: pass
 
 - summary: |
     Проверка отображения сайта на планшете
-status: pass 
+status: fail 
 
 - summary: |
     Проверка отображения сайта на смартфоне
-status: pass 
+status: fail
 
 - summary: |
     Проверка переключения языка интерфейса с русского на английский
