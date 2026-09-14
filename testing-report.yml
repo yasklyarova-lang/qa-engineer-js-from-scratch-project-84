@@ -12,11 +12,11 @@ status: fail
 
 - summary: |
     Проверка фильтрации товаров по категории
-status: pass
+status: fail
   
  - summary: |
     Проверка фильтрации товаров по производителю
-status: pass
+status: fail
 
 - summary: |
     Проверка фильтрации товаров по наличию
@@ -24,7 +24,7 @@ status: pass
 
 - summary: |
     Проверка фильтрации товаров по цене
-status: pass
+status: fail
 
 - summary: |
     Проверка отображения сайта на мобильном устройстве
