@@ -2,18 +2,27 @@
 
 [![hexlet-check](https://github.com/yasklyarova-lang/qa-engineer-js-from-scratch-project-84/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/yasklyarova-lang/qa-engineer-js-from-scratch-project-84/actions)
 
-Протестируйте интернет-магазин, и найдите все ошибки
+Учебный проект Хекслета по тестированию интернет-магазина.
 
-Учебный проект Хекслета: https://ru.hexlet.io/programs/qa-engineer-js-from-scratch
-Как это должно работать: https://products-store-ru.hexlet.app
+В рамках проекта проводилось ручное тестирование интернет-магазина:
+https://products-store.hexlet.app
+
+Эталонная версия приложения:
+https://products-store-ru.hexlet.app
+
+Учебная программа:
+https://ru.hexlet.io/programs/qa-engineer-js-from-scratch
 
 ## Стек
 
-- Разное
+- Ручное функциональное тестирование
+- Google Chrome 152.0.7977.76
+- macOS 26.5.2
+- DevTools (Network, Console, Application)
+- YAML для описания тестовых артефактов
+- GitHub Actions (CI)
 
 ## Установка
-
-<!-- Опишите установку: клонирование, зависимости, переменные окружения -->
 
 ```bash
 git clone https://github.com/yasklyarova-lang/qa-engineer-js-from-scratch-project-84.git
@@ -22,16 +31,13 @@ cd qa-engineer-js-from-scratch-project-84
 
 ## Использование
 
-<!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
-
+Для просмотра результатов тестирования откройте соответствующие YAML-файлы:
+- требования — requirements.yml;
+- тест-кейсы — test-cases.yml;
+- результаты тестирования — testing-report.yml;
+- обнаруженные дефекты — bugreports.yml;
+- результаты регрессионного тестирования — regress-report.yml.
 ---
-
-<details>
-<summary>Автоматические тесты Хекслета</summary>
-
-Тесты запускаются на каждый коммит. За запуск отвечает файл `.github/workflows/hexlet-check.yml` — не удаляйте и не переименовывайте ни его, ни репозиторий.
-
-</details>
 
 ## О Хекслете
 
