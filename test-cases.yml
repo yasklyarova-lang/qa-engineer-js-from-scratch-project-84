@@ -364,3 +364,116 @@
     - Открыть в браузере сайт https://products-store.hexlet.app
   expected-result: |
     Сайт открывается, главная страница загружается и отображается пользователю  
+
+
+
+
+
+
+
+
+
+
+
+- summary: |
+    Проверка использования кэша при повторной загрузке страницы
+  requirement: |
+    Система должна использовать кэширование для ускорения повторной загрузки ресурсов
+  prerequisites: |
+    Открыт сайт https://products-store.hexlet.app
+    Открыты DevTools → Network
+    Опция Disable cache отключена
+  test-data: |
+    Статический ресурс = CSS, JavaScript или изображение
+  steps:
+    - Перезагрузить главную страницу
+    - Дождаться полной загрузки страницы
+    - Повторно перезагрузить страницу
+    - Проверить статические ресурсы во вкладке Network
+  expected-result: |
+    При повторной загрузке страницы статические ресурсы используются из кэша браузера
+    В Network для кэшируемых ресурсов отображается "(memory cache)" или "(disk cache)"
+
+- summary: |
+    Успешное открытие сайта по защищённому HTTPS-соединению
+  requirement: |
+    Сайт должен использовать HTTPS для обеспечения безопасного соединения
+  prerequisites: |
+    Есть интернет-соединение
+  test-data: |
+    URL = https://products-store.hexlet.app
+  steps:
+    - Открыть сайт по HTTPS
+    - Проверить адресную строку браузера
+  expected-result: |
+    Сайт открывается по HTTPS, соединение защищено, предупреждение о небезопасном соединении отсутствует
+
+- summary: |
+    Корректный расчёт итоговой суммы товара в корзине
+  requirement: |
+    Итоговая стоимость товаров в корзине должна рассчитываться с учётом количества каждого товара
+  prerequisites: |
+    Открыт каталог товаров
+    Корзина пуста
+  test-data: |
+    Товар = Essence Mascara Lash Princess
+    Количество = 3
+  steps:
+    - Добавить товар Essence Mascara Lash Princess в корзину
+    - Увеличить количество товара до 3
+    - Открыть корзину
+  expected-result: |
+    Итоговая стоимость товара в корзине рассчитывается с учётом количества товара и действующей скидки
+
+- summary: |
+    Проверка отсутствия JavaScript-ошибок в Console
+  requirement: |
+    На основных страницах сайта не должно быть JavaScript-ошибок в Console
+  prerequisites: |
+    Открыт сайт https://products-store.hexlet.app
+    Открыты Chrome DevTools
+    Открыта вкладка Console
+  test-data: |
+    Нет данных
+  steps:
+    - Открыть главную страницу сайта
+    - Проверить Console на наличие JavaScript-ошибок
+  expected-result: |
+    В Console отсутствуют JavaScript-ошибки
+
+- summary: |
+    Отсутствие запросов с кодами 4xx и 5xx
+  requirement: |
+    При работе с основными страницами сайта не должно быть запросов с кодами 4xx и 5xx
+  prerequisites: |
+    Открыт сайт https://products-store.hexlet.app
+    Открыты DevTools → Network
+  test-data: |
+    URL = https://products-store.hexlet.app
+  steps:
+    - Перезагрузить главную страницу
+    - Открыть карточку товара
+    - Добавить товар в корзину
+    - Открыть корзину
+    - Проверить запросы во вкладке Network
+  expected-result: |
+    В Network отсутствуют запросы с кодами 4xx и 5xx
+
+- summary: |
+    Отсутствие упавших сетевых запросов
+  requirement: |
+    При работе с основными страницами сайта не должно быть упавших сетевых запросов
+  prerequisites: |
+    Открыт сайт https://products-store.hexlet.app
+    Открыты DevTools → Network
+  test-data: |
+    URL = https://products-store.hexlet.app
+  steps:
+    - Перезагрузить главную страницу
+    - Открыть карточку товара
+    - Добавить товар в корзину
+    - Открыть корзину
+    - Проверить запросы во вкладке Network
+  expected-result: |
+    В Network отсутствуют запросы со статусом failed
+
