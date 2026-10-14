@@ -106,6 +106,8 @@
     Пользователь должен иметь возможность просматривать список товаров
   prerequisites: |
     Открыт сайт https://products-store.hexlet.app
+  test-data: |
+    
   steps:
     - Проверить отображение списка товаров
   expected-result: |
