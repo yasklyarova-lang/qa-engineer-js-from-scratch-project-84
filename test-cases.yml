@@ -107,7 +107,7 @@
   prerequisites: |
     Открыт сайт https://products-store.hexlet.app
   test-data: |
-    
+    URL = https://products-store.hexlet.app
   steps:
     - Проверить отображение списка товаров
   expected-result: |
@@ -459,7 +459,7 @@
     Открыты Chrome DevTools
     Открыта вкладка Console
   test-data: |
-    
+    URL = https://products-store.hexlet.app
   steps:
     - Открыт сайт https://products-store.hexlet.app
     - Проверить Console на наличие JavaScript-ошибок
