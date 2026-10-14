@@ -3,7 +3,11 @@
     Успешный поиск товара по ключевому слову
   status: fail
 
-  - summary: |
+- summary: |
+    Поиск товара с пустым значением
+  status: fail
+
+- summary: |
     
   status: fail
     
