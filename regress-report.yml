@@ -1,5 +1,128 @@
 ---
 test-cases:
+- summary: |
+    Успешный поиск товара по ключевому слову
+  status: fail -> fail
+
+- summary: |
+    Поиск товара с пустым значением
+  status: fail -> pass
+
+- summary: |
+    Успешная фильтрация товаров по категории
+  status: fail -> fail
+
+- summary: |
+    Успешная фильтрация товаров по производителю
+  status: fail -> fail
+
+- summary: |
+    Успешная фильтрация товаров по наличию
+  status: pass -> pass
+
+- summary: |
+    Успешная фильтрация товаров по диапазону цены
+  status: fail -> fail
+
+- summary: |
+    Некорректная фильтрация товаров при минимальной цене больше максимальной
+  status: pass -> fail
+
+- summary: |
+    Успешный просмотр списка товаров
+  status: pass -> pass
+
+- summary: |
+    Успешное открытие подробной информации о товаре
+  status: pass -> pass
+
+- summary: |
+    Успешное добавление товара в корзину
+  status: pass -> pass
+
+- summary: |
+    Сохранение содержимого корзины после обновления страницы
+  status: pass -> pass
+
+- summary: |
+    Успешное оформление заказа
+  status: pass -> pass
+
+- summary: |
+    Проверка отображения основного контента при медленном соединении
+  status: fail -> fail
+
+- summary: |
+    Защита поиска от XSS-атаки
+  status: pass -> pass
+
+- summary: |
+    Корректное отображение шапки сайта на смартфоне
+  status: pass -> pass
+
+- summary: |
+    Корректное отображение панели фильтров на смартфоне
+  status: fail -> fail
+
+- summary: |
+    Корректное отображение карточек товаров на смартфоне
+  status: fail -> pass
+
+- summary: |
+    Корректное отображение корзины на смартфоне
+  status: fail -> pass
+
+- summary: |
+    Отсутствие горизонтальной прокрутки на смартфоне
+  status: pass -> pass
+
+- summary: |
+    Успешное открытие сайта в Google Chrome
+  status: pass -> pass
+
+- summary: |
+    Успешное открытие сайта в Mozilla Firefox
+  status: pass -> pass
+
+- summary: |
+    Успешное открытие сайта в Safari
+  status: pass -> pass
+
+- summary: |
+    Проверка работы сайта при одновременной нагрузке 100 пользователей
+  status: fail -> fail
+
+- summary: |
+    Успешное переключение интерфейса на русский язык
+  status: pass -> pass
+
+- summary: |
+    Успешное переключение интерфейса на английский язык
+  status: pass -> pass
+
+- summary: |
+    Проверка использования кэша при повторной загрузке страницы
+  status: pass
+
+- summary: |
+    Успешное открытие сайта по защищённому HTTPS-соединению
+  status: pass
+
+- summary: |
+    Корректный расчёт итоговой суммы товара в корзине
+  status: pass
+
+- summary: |
+    Проверка отсутствия JavaScript-ошибок в Console
+  status: pass
+
+- summary: |
+    Отсутствие запросов с кодами 4xx и 5xx
+  status: pass
+
+- summary: |
+    Отсутствие упавших сетевых запросов
+  status: pass 
   
 bugreports:
   - summary: |
