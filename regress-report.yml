@@ -102,27 +102,27 @@ test-cases:
 
 - summary: |
     Проверка использования кэша при повторной загрузке страницы
-  status: pass
+  status: pass -> pass
 
 - summary: |
     Успешное открытие сайта по защищённому HTTPS-соединению
-  status: pass
+  status: pass -> pass
 
 - summary: |
     Корректный расчёт итоговой суммы товара в корзине
-  status: pass
+  status: pass -> pass
 
 - summary: |
     Проверка отсутствия JavaScript-ошибок в Console
-  status: pass
+  status: pass -> pass
 
 - summary: |
     Отсутствие запросов с кодами 4xx и 5xx
-  status: pass
+  status: pass -> pass
 
 - summary: |
     Отсутствие упавших сетевых запросов
-  status: pass 
+  status: pass -> pass
   
 bugreports:
   - summary: |
